@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+
+/*id  = #
+class = .*/
+body {
+    background-color: rgb(98, 138, 128);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#h1p {
+    text-align: center;
+    color: rgb(176, 202, 176);
+    background-color: rgba(83, 184, 83, 0.397);
+}
+h1 {
+    color: rgb(83, 83, 179);
+}
+h2 {
+    color: rgb(170, 82, 136);
+}
+
+.paragrafos {
+    color: azure;
+}
+.titulos {
+    color: red;
+}
+.basico {
+    color: blueviolet;
+}
+.intermediario {
+    color: chocolate;
+}
+.avancado {
+    color: darkgray;
+}
+.marcacoes {
+    text-decoration: underline;
+    /* testes abaixo: ;*/
+}
+#oi {
+    color: rgb(73, 2, 240);
+}
+#oi2 {
+    color: burlywood;
+}
+#oi3 {
+    color: rgb(47, 219, 84);
+}

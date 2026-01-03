@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudoclass
+        :: = pseudo-element
+        > clildren
+        */
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        a {
+            color:brown ;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        a:visited {
+            color: rgba(23, 57, 150, 0.671);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        a:active {
+            color: yellow;
+        }
+        a::before {
+            content: "♔";
+            color: rebeccapurple;
+        }
+        a::after {
+            content: "[link]";
+            text-decoration: none;
+            font-weight: normal;
+            color: red;
+        }
+
+        .especial::before {
+            content: "♕";
+        }
+        .especial::after {
+            content: "♕";
+            color: rebeccapurple;
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1><span>P</span>ersonalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" >GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" class="especial">YouTube</a></li>
+        <li><a href="https://cursoemvideo.com" class="especial">Curso em video</a></li>
+    </ul>
+</body>
+</html>

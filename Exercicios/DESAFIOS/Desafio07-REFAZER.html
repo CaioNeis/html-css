@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="../Ex004/ICONE.png" type="image/x-icon">
+    <style></style>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente almente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="/ex011/imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="/ex011/imagens/foto-m.png" type="image/png">
+        <img src="/ex011/imagens/foto-g.png" alt="Imagem flexível">
+    </picture>

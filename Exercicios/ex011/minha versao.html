@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu teste de Imagem</title>
+    <link rel="shortcut icon" href="/Ex004/ICONE3.png" type="image/x-icon">
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">MEU TESTE DE IMAGEM DINÂMICA</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="fotos/foto-d.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="fotos/foto-c.png" type="image/png">
+        <img src="fotos/foto-a.png" alt="imagem A">
+    </picture>
+</body>
+</html>
