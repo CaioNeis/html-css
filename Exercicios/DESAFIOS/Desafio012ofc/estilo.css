@@ -1,15 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+:root {
+    --fdestaque:"Passion One";
+    --fpoema: "Sriracha";
+    --fpadrao:Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 html,body {
     background-color: darkgrey;
     min-height: 100%;
+
+    font-family: var(--fpadrao);
 }
 
 header {
@@ -23,6 +32,9 @@ header {
 header > h1 {
     padding-top: 50px;
 
+    font-family: var(--fdestaque);
+
+    font-size: 10vw;
     /*Nova tecnica:
     text-transform: capitalize, uppercase;*/
 
@@ -48,16 +60,20 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
 
-    line-height: 2em;
+    line-height: 10vw;
 
     padding-left: 30px;
+
+    font-family: var(--fpoema);
+
+    font-size: 4vw;
 
 
 }
 
 .imagem  p {
-    width: 400px;
-
+    display: inline-block;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.26);
 }
 
