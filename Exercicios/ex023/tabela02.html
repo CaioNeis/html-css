@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border: solid black;
+            border-collapse: collapse;
+
+            position: relative;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -2px;
+            background-color: gray;
+        }
+
+        /*Efeito zebrado - tipos: odd/even - 2n*/ 
+        tbody tr:nth-child(even) {
+            background-color: rgb(255, 255, 255);
+        }
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        .num {
+            text-align: right;
+        }
+        .total {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.4em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+
+            THEAD
+                TR, TD, TH
+            TBODY 
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">46 081 801</td>
+             </tr>
+
+             <tr>
+                <td>Mians Gerais</td>
+                <td class="num">21 393 441</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 223 547</td>
+             </tr>
+             
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 870 907</td>
+             </tr>
+             
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 890 517</td>
+             </tr>
+             
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 233 263</td>
+             </tr>
+             
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 562 007</td>
+             </tr>
+             
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 268 836</td>
+             </tr>
+             
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 711 196</td>
+             </tr>
+             
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 187 029</td>
+             </tr>
+             
+             <tr>
+                <td>Mians Gerais</td>
+                <td class="num">21 393 441</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 223 547</td>
+             </tr>
+             
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 870 907</td>
+             </tr>
+             
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 890 517</td>
+             </tr>
+             
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 233 263</td>
+             </tr>
+             
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 562 007</td>
+             </tr>
+             
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 268 836</td>
+             </tr>
+             
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 711 196</td>
+             </tr>
+             
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 187 029</td>
+             </tr>
+             
+             <tr>
+                <td>Mians Gerais</td>
+                <td class="num">21 393 441</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 223 547</td>
+             </tr>
+             
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 870 907</td>
+             </tr>
+             
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 890 517</td>
+             </tr>
+             
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 233 263</td>
+             </tr>
+             
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 562 007</td>
+             </tr>
+             
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 268 836</td>
+             </tr>
+             
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 711 196</td>
+             </tr>
+             
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 187 029</td>
+             </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="total"><strong>213 421 037</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis error ratione in magni nihil doloribus quod! Maiores pariatur totam laborum. Iure, ipsum reprehenderit. Saepe numquam iure id sed adipisci.</p>
+
+</body>
+</html>
