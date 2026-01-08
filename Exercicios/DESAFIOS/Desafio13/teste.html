@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body h1 {
+            text-align: center;
+        }
+        table {
+            margin: auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-collapse: collapse;
+
+            width: 500px;
+            height: 300px;
+        }
+        tbody {
+            border: solid 1px black;
+
+        }
+
+        th, td {
+            padding: 10px;
+            border: solid 1px black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela teste</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th>GRUPO</th>
+                <th>NOMES</th>
+                <th colspan="3">FILMES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">MULHERES</th>
+                <td>Ana Beatriz</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>Maria Mendonça</td>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <th rowspan="3">HOMENS</th>
+                <td>Mauricio Souza</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+            <td>Joao Paulo</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            </tr>
+            <tr>
+                <td>Junior Gonzaga</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
