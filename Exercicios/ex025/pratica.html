@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática de Formulários</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        form {
+            border: solid 1.3px black;
+            text-align: center;
+
+            margin: 0px 50px;
+        }
+        input#enviar {
+            margin: 5px;
+        }
+        .obrigatorio {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form action="processa.php" method="post" autocomplete="off">
+        <p><label for="inomecompleto">Nome: <span class="obrigatorio">*</span></label> 
+            <input type="text" name="nomecompleto" id="inomecompleto" required>
+        </p>
+        <p><label for="iemail">Email: <span class="obrigatorio">*</span></label>
+            <input type="email" name="email" id="iemail" required>
+        </p>
+        <p><label for="iidade">Idade: <span class="obrigatorio">*</span></label>
+            <input type="number" name="idade" id="iidade" required>
+        </p>
+        <p><label for="isenha">Senha: <span class="obrigatorio">*</span></label>
+            <input type="password" name="senha" id="isenha" required>
+        </p>
+        <input type="reset" value="Limpar dados"><br>
+        <input type="submit" value="Enviar" id="enviar" required>
+    </form>
+</body>
+</html>
