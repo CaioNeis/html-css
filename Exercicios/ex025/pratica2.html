@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica 2</title>
+    <style>
+        body {
+            text-align: center;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            
+        }
+        form {
+            border: solid 1.5px black;
+            padding: 15px;
+        }
+        span {
+            color: rgba(255, 0, 0, 0.514);
+        }
+        .bloco {
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Avaliação</h1>
+    <form action="avaliacao.php" method="get" autocomplete="on">
+        <div class="bloco">
+            <div>
+                <label for="inome">Nome completo: <span class="required">*</span></label>
+                <input type="text" name="nome" id="inome" required minlength="40" placeholder="Digite seu nome completo" autocomplete="name">
+            </div>
+            <div>
+                <label for="inota">Nota na prova: <span class="required">*</span></label>
+                <input type="number" name="nota" id="inota" required placeholder="0 a 10">
+            </div>
+            <div>
+                <label for="imes">Mês da avaliação: <span class="required">*</span></label>
+                <input type="month" name="mes" id="imes" required step="">
+            </div>
+            <div>
+                <label for="idata">Data da Prova: <span class="required">*</span></label>
+                <input type="date" name="data" id="idata" required step="">
+            </div>
+            <div>
+                <label for="itime">Horário da prova: <span class="required">*</span></label>
+                <input type="time" name="time" id="itime" required step="">
+            </div>
+            <div>
+                <input type="reset" value="Limpar">
+                <br>
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
