@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 4</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        legend {
+            text-align: center;
+
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário 4</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset><!--fieldset = Grupo de campos-->
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="nome" required maxlength="20" minlength="5">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$" placeholder="(00)000000000">
+            </p>
+            </fieldset>
+            <!--Estudar RegEx-->
+            <p>
+                <input type="reset">
+                <input type="submit" value="Enviar">
+            </p>
+    </form>
+</body>
+</html>
