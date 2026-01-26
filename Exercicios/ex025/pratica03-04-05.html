@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática: 3-4-5 </title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/19024/19024930.png" type="image/x-icon">
+    <style>
+        body {
+            min-height: 100vh;
+            font-size: 1em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            background-image: linear-gradient(to top, rgb(172, 169, 169), rgba(0, 0, 0, 0.589));
+        }
+
+        label, input {
+            margin: 3px;
+        }
+
+        
+        legend {
+            text-align: left;
+
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <!--EXERCÍCIO 3, 4, 5 — FORMULÁRIO-->
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <h1>Cadastro e Avaliação do Aluno</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div>
+                <label for="iname">Nome:</label>
+                <input type="text" name="name" id="iname" required autocomplete="name" minlength="5" maxlength="30" placeholder="Nome Completo">
+            </div>
+            <div>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="exemple@gmail.com">
+            </div>
+            <div>
+                <label for="ifone">Telefone:</label>
+                <input type="tel" name="fone" id="ifone" required placeholder="(00) 00000-0000">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informações Academicas</legend>
+
+            <div>
+                <label for="imedia">Média Final</label>
+                <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0-10" step="0.1">
+            </div>
+            <div>
+                <label for="iper">Período Letívo</label>
+                <input type="month" name="per" id="iper" required>
+            </div>
+            <div>
+                <label for="idate">Data da Prova</label>
+                <input type="date" name="date" id="idate" required>
+            </div>
+            <div>
+                <label for="itime">Horário da prova</label>
+                <input type="time" name="time" id="itime" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Perfil do Aluno</legend>
+
+            <div>
+                <input type="radio" name="sex" id="isexm" value="M" checked><label for="isexm">Masculino</label>
+                <input type="radio" name="sex" id="isexf" value="F"><label for="isexf">Feminino</label>
+            </div>
+            <hr>
+            <div>
+                <input type="checkbox" name="est" id="iest"><label for="iest">Estudar</label>
+                <input type="checkbox" name="esp" id="iesp"><label for="iesp">Esportes</label>
+                <input type="checkbox" name="jog" id="ijog"><label for="ijog">Jogos</label>
+                <input type="checkbox" name="lei" id="ilei"><label for="ilei">Leitura</label>
+                <input type="checkbox" name="fam" id="ifam"><label for="ifam">Familia</label>
+                <input type="checkbox" name="pas" id="ipas"><label for="ipas">Passear</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Confirmação</legend>
+
+            <input type="checkbox" name="conf" id="iconf" required><label for="iconf">Declaro que os dados acima estão corretos.</label>
+            <br>
+            <input type="reset" value="Limpar dados">
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+</body>
+</html>
