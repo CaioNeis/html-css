@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática de Media Queries</title>
+    <link rel="stylesheet" href="estilos/principal.css" media="all">
+    <link rel="stylesheet" href="estilos/impressao.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu">
+</head>
+<body>
+    <header>
+        <h1>Minhas Dicas de Estudo</h1>
+        <span id="menu" class="material-symbols-outlined" onclick="clickA()">menu</span>
+        <menu id="list">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Técnicas</a></li>
+                <li><a href="#">Materiais</a></li>
+                <li><a href="#">Motivação</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+    
+        <section>
+            <article>
+                <h2>
+                    Técnica Pomodoro funciona mesmo?
+                </h2>
+                <p>
+                    A técnica Pomodoro divide o estudo em blocos de 25 minutos com 5 minutos de pausa. Depois de quatro ciclos, faz-se uma pausa maior de 15–30 minutos.Muita gente acha que ajuda a manter o foco e evita procrastinação. Eu uso há meses e sinto que consigo render mais sem me sentir esgotado.O segredo é respeitar o timer e não ignorar as pausas. Experimente por uma semana e veja se faz diferença para você.
+                </p>
+            </article>
+
+            <article>
+                <h2>
+                    Como organizar um cronograma semanal realista
+                </h2>
+                <p>
+                    Primeiro, liste todas as matérias e compromissos fixos da semana.Depois, divida o tempo disponível em blocos de 1 a 2 horas por matéria, deixando espaço para descanso e imprevistos. Use cores diferentes para cada matéria no planner ou app. Eu prefiro colocar as tarefas mais difíceis no horário em que estou mais disposto.Revise o cronograma todo domingo e ajuste o que não deu certo na semana anterior.
+                </p>
+            </article>
+            <article>
+                <h2>
+                    Melhores aplicativos gratuitos para estudar em 2025
+                </h2>
+                <p>
+                    Notion – para organizar resumos, cronogramas e flashcards em um só lugar.Forest – aplicativo que te ajuda a ficar focado plantando árvores virtuais (e mata a árvore se você sair do app). Anki – o melhor para revisão espaçada com flashcards. Google Agenda – simples e sincroniza com tudo. Quizlet – ótimo para criar e compartilhar conjuntos de questões. Todos são grátis na versão básica e funcionam bem no celular.
+                </p>
+            </article>
+        </section>
+    </main>
+    <script>
+        function clickA() {
+            if (list.style.display == 'block') {
+                list.style.display = 'none'
+            } else {
+                list.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
