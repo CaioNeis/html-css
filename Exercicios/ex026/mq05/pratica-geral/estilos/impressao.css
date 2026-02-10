@@ -1,1 +1,10 @@
 @charset "UTF-8";
+
+#menu {
+    display: none !important;
+}
+
+main::after {
+    content: 'Impresso através do site www.minhasdicasestudo.com.br – Caio – 2026';
+}
+
