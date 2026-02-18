@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .container {
+            background-color: rgba(255, 0, 0, 0.404);
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+        }
+        .item {
+
+            background-color: rgba(0, 128, 0, 0.548);
+            flex: auto;
+            text-align: center;
+            border: solid 0.4px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
+
+<!-- Flex Direction
+
+Padrao = row
+
+column e reverse
+row e reverse
+-->
