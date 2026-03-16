@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
         .container {
-            background-color: rgba(255, 0, 0, 0.404);
             display: flex;
-            padding: 0px;
             flex-direction: row;
+
+            background-color: rgba(255, 0, 0, 0.425);
         }
         .item {
-
-            background-color: rgba(0, 128, 0, 0.548);
+            flex-wrap: none;
             text-align: center;
-            border: solid 0.4px;
             padding: 10px;
-            margin: 0px;
+            border: solid 1px;
+            background-color: rgba(0, 0, 255, 0.452);
         }
     </style>
 </head>
@@ -33,11 +32,3 @@
     </div>
 </body>
 </html>
-
-<!-- Flex Direction
-
-Padrao = row
-
-column e reverse
-row e reverse
--->
