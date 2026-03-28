@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Flex-Box 1</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        header {
+            background: rgba(158, 2, 2, 0.836);
+            height: 40px;
+        }
+        header h1 {
+            text-align: center;
+            color: white;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav {
+            display: flex;
+            width: 400px;
+            background-color: rgba(8, 163, 8, 0.747);
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            display: flex;
+            width: 100%;
+            background-color: rgba(255, 255, 0, 0.705);
+        }
+        section div {
+            flex: 1 1 40%;
+            border: 1px solid;
+        }
+
+        footer {
+            background-color: rgba(128, 128, 128, 0.801);
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEU SITE</h1>
+    </header>
+
+    <main>
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        Services
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div>Card 1</div>
+            <div>Card 2</div>
+            <div>Card 3</div>
+            <div>Card 4</div>
+            <div>Card 5</div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h1>
+                FOOTER
+            </h1>
+        </div>
+    </footer>
+</body>
+</html>
