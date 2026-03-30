@@ -9,86 +9,99 @@
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            background-color: rgb(211, 211, 211);
         }
         header {
-            background: rgba(158, 2, 2, 0.836);
-            height: 40px;
+            width: 100vw;
+            color: white;
+            background-color: gray;
+            align-items: center;
+            padding: 10px;
+            
         }
         header h1 {
-            text-align: center;
+            margin: 0px 5px;
             color: white;
-        }
-        main {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        nav {
-            display: flex;
-            width: 400px;
-            background-color: rgba(8, 163, 8, 0.747);
-        }
+            text-shadow: 0px 0px 5px black;
+        }        
         nav ul {
             display: flex;
-            flex-direction: column;
+            list-style-type: none;
+            
         }
-
-        section {
+        nav ul li {
+            
+            transition: 0.3s;
+            padding: 10px;
             display: flex;
-            width: 100%;
-            background-color: rgba(255, 255, 0, 0.705);
+            margin: 0px 5px;
+            justify-content: space-around;
+            border-radius: 6px;
+            background-color: rgba(10, 10, 10, 0.925);
         }
-        section div {
-            flex: 1 1 40%;
-            border: 1px solid;
+        nav ul li:hover {
+            cursor: pointer;
+            background-color: rgba(240, 240, 240, 0.849);
+            color: black;
+        }
+        section {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.226);
+        }
+        @media screen and (max-width: 768px) { 
+        header {
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            }
+
+        nav ul {
+            display: flex;
+            width: 100vw;
+            flex-direction: column;
+            }
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        
         }
 
-        footer {
-            background-color: rgba(128, 128, 128, 0.801);
-            text-align: center;
-            color: white;
-        }
+         @media screen and (min-width: 1300px) {
+            header {
+                width: 100vw;
+                display: flex;
+                justify-content: space-between;
+            }
+         }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>MEU SITE</h1>
-    </header>
-
-    <main>
+        <h1>Meu site</h1>
         <nav>
-            <div>
-                <ul>
-                    <li>
-                        Home
-                    </li>
-                    <li>
-                        About
-                    </li>
-                    <li>
-                        Services
-                    </li>
-                    <li>
-                        Contact
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <li>Opção 1</li>
+                <li>Opção 2</li>
+                <li>Opção 3</li>
+                <li>Opção 4</li>
+                <li>Opção 5</li>
+                <li>Opção 6</li>
+            </ul>
         </nav>
+    </header>
+    <main>
         <section>
-            <div>Card 1</div>
-            <div>Card 2</div>
-            <div>Card 3</div>
-            <div>Card 4</div>
-            <div>Card 5</div>
+            <h2>Teste de FlexBox</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia dolores rerum provident suscipit itaque nihil eius labore magnam rem, accusantium, minus laborum natus assumenda odit aspernatur possimus cumque velit ut?
+            Explicabo quidem pariatur expedita. Dolore quod accusamus atque reprehenderit! Adipisci aut vel debitis aperiam consequuntur similique quisquam voluptatem aliquam, quos expedita molestias, culpa cumque soluta nam dolor laboriosam modi quam.</p>
         </section>
     </main>
-
-    <footer>
-        <div>
-            <h1>
-                FOOTER
-            </h1>
-        </div>
-    </footer>
 </body>
 </html>
