@@ -1,0 +1,26 @@
+* {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            body {
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+
+        .divimg {
+            height: 100%;
+            border: solid 1px rgb(128, 128, 128);
+        }
+        .section1 {
+            background-color: #4e4e4e56;
+        }
+
+        .section2 {
+            background-color: #4e4e4e56;
+        }
+        .divvideo {
+            height: 100%;
+            border: solid 1px rgb(128, 128, 128);
+        }

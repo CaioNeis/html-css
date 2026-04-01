@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+.section1 {
+    display: flex;
+    justify-content: flex-end;
+}
+.section2 {
+    display: flex;
+}
